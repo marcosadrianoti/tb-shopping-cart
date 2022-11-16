@@ -20,7 +20,6 @@ describe('Teste a função fetchProductsList', () => {
   });
 
   it('o retorno da função fetchProductsList com o argumento \'computador\' é uma estrutura de dados igual ao objeto computadorSearch', async () => {
-    // const response = await fetchProductsList('computador');
     await expect(fetchProductsList('computador')).resolves.toEqual(computadorSearch);
   });
 
