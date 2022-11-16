@@ -4,6 +4,6 @@ import './style.css';
 
 document.querySelector('.cep-button').addEventListener('click', searchCep);
 
-const test = await fetchProductsList('computador');
+const ProductsList = await fetchProductsList('computador');
 
-console.log(test);
+console.log(ProductsList);
