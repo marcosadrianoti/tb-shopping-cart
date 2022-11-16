@@ -8,7 +8,7 @@ describe('Teste a função fetchProductsList', () => {
     expect(typeof fetchProductsList).toBe('function');
   });
 
-  it('fetch é chamado ao executar fetchProductsList', async() => {
+  it('fetch é chamado ao executar fetchProductsList', async () => {
     await fetchProductsList('computador');
     expect(fetch).toHaveBeenCalledTimes(1);
   });
@@ -25,7 +25,7 @@ describe('Teste a função fetchProductsList', () => {
   });
 
   it('Chamar a função fetchProductsList sem argumento, retorna um erro com a mensagem: \'Termo de busca não informado\'', () => {
-    expect(async() => { await fetchProductsList() }).toThrow('Termo de busca não informado');
+    expect(async () => { await fetchProductsList() }).toThrow('Termo de busca não informado');
   });
   // it('...', () => {
   // });
