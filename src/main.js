@@ -25,4 +25,3 @@ productsList.forEach((product) => {
   document.querySelector('.products').appendChild(productElement);
 });
 removeLoadingElem();
-
