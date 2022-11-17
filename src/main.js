@@ -6,11 +6,16 @@ import './style.css';
 
 document.querySelector('.cep-button').addEventListener('click', searchCep);
 
-addMsgElem('carregando...');
-const productsList = await fetchProductsList('computador');
+try {
+  addMsgElem('carregando...');
+  const productsList = await fetchProductsList('computador');
 
-productsList.forEach((product) => {
-  const productElement = createProductElement({ ...product });
-  document.querySelector('.products').appendChild(productElement);
-});
-removeMsgElem();
+  productsList.forEach((product) => {
+    const productElement = createProductElement({ ...product });
+    document.querySelector('.products').appendChild(productElement);
+  });
+  removeMsgElem();
+} catch (error) {
+  removeMsgElem();
+  addMsgElem('Algum erro ocorreu, recarregue a página e tente novamente');
+}
