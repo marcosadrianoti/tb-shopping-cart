@@ -1,6 +1,7 @@
 import './mocks/fetchSimulator';
 import { fetchProductsList, fetchProduct } from '../helpers/fetchFunctions';
 import computadorSearch from './mocks/search';
+import product from './mocks/product';
 
 // implemente seus testes aqui
 describe('Teste a função fetchProductsList', () => {
@@ -45,7 +46,7 @@ describe('Teste a função fetchProduct', () => {
   });
 
   it('O retorno da função fetchProduct com o argumento \'MLB1405519561\' é uma estrutura de dados igual ao objeto computadorSearch', async () => {
-    await expect(fetchProduct('MLB1405519561')).resolves.toEqual(produto);
+    await expect(fetchProduct('MLB1405519561')).resolves.toEqual(product);
   });
 
   it('Chamar a função fetchProduct sem argumento, retorna um erro com a mensagem: \'ID não informado\'', () => {
