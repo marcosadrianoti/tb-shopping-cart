@@ -46,9 +46,11 @@ export const getIdFromProduct = (product) => (
  * @param {Element} li - Elemento do produto a ser removido do carrinho.
  * @param {string} id - ID do produto a ser removido do carrinho.
  */
-const removeCartProduct = (li, id) => {
+const removeCartProduct = async (li, id) => {
   li.remove();
-  removeCartID(id);
+  const productDatas = await fetchProduct(id);
+  const myPrice = parseFloat(productDatas.price).toFixed(2);
+  removeCartID(id, myPrice);
 };
 
 /**
@@ -124,7 +126,8 @@ export const createProductElement = ({ id, title, thumbnail, price }) => {
   );
 
   cartButton.addEventListener('click', async () => {
-    saveCartID(id);
+    saveCartID(id, price);
+
     const productDatas = await fetchProduct(id);
     const product = createCartProductElement({ ...productDatas });
     document.querySelector('.cart__products').appendChild(product);

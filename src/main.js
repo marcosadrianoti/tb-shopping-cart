@@ -24,6 +24,9 @@ try {
       document.querySelector('.cart__products')
         .appendChild(createCartProductElement({ ...product }));
     }));
+  const subTotal = document.querySelector('.total-price');
+  const total = parseFloat(localStorage.getItem('total')) || 0;
+  subTotal.innerText = `${total.toFixed(2)}`;
 } catch (error) {
   removeMsgElem();
   addMsgElem('Algum erro ocorreu, recarregue a página e tente novamente');
