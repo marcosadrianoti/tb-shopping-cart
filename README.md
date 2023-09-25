@@ -12,17 +12,17 @@ Projeto desenvolvido por mim durante o curso de Desenvolvimento Web na Trybe. Di
 <details>
 <summary><strong> Requisitos do projeto:</strong></summary>
 
-  * (TDD) Desenvolver testes de no mínimo 50% de cobertura das funções e linhas do arquivo fetchFunctions
-  * Implementar a função fetchProductsList
-  * Criar uma listagem de produtos
-  * Adicionar um texto de carregando durante uma requisição à API
-  * Exibir uma mensagem de erro caso algo dê errado na requisição à API
-  * (TDD) Desenvolver testes de no mínimo 100% de cobertura das funções e linhas do arquivo fetchFunctions
-  * Implementar a função fetchProduct
-  * Adicionar o produto ao carrinho de compras
-  * Carreguar o carrinho de compras ao iniciar a página
-  * Calcular o valor total dos itens do carrinho de compras
-  * Fazer uma requisição a API de CEPs e exibir o endereço do CEP
+  * (TDD) Desenvolver testes de no mínimo 50% de cobertura das funções e linhas do arquivo fetchFunctions.
+  * Implementar a função fetchProductsList.
+  * Criar uma listagem de produtos.
+  * Adicionar um texto de carregando durante uma requisição à API.
+  * Exibir uma mensagem de erro caso algo dê errado na requisição à API.
+  * (TDD) Desenvolver testes de no mínimo 100% de cobertura das funções e linhas do arquivo fetchFunctions.
+  * Implementar a função fetchProduct.
+  * Adicionar o produto ao carrinho de compras.
+  * Carreguar o carrinho de compras ao iniciar a página.
+  * Calcular o valor total dos itens do carrinho de compras.
+  * Fazer uma requisição a API de CEPs e exibir o endereço do CEP.
 </details>
   
 ## Rodando o projeto localmente
